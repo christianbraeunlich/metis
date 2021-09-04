@@ -17,6 +17,24 @@ jobs:
       - uses: subosito/flutter-action@v1
         with:
           flutter-version: '2.2.0'
-      - run: flutter pub get
-      - run: flutter analyze
-      - run: flutter test
+
+      - name: Pub Get Packages
+        run: flutter pub get
+
+      - name: Run Flutter Analyze
+        run: flutter analyze
+      
+      - name: Run Flutter Test
+        run: flutter test
+      
+      - name: Build APK
+        run: flutter build apk --split-per-abi --release
+
+      - name: Build APPBUNDLE
+        run: flutter build appbundle --release
+
+      - name: Create Github Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/app/outputs/apk/release/*.apk,build/app/outputs/bundle/release/*.aab"
+          token: ${{ secrets.RELEASES_TOKEN }}
