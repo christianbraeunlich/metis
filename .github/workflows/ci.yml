@@ -29,17 +29,3 @@ jobs:
 
       - name: Build APPBUNDLE
         run: flutter build appbundle --release
-
-      - name: Create Github Release
-        uses: ncipollo/release-action@v1
-        with:
-          draft: true
-          prerelease: true
-          artifacts: "build/app/outputs/bundle/release/*.aab"
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Save APPBUNDLE to Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: APPBUNDLE
-          path: build/app/outputs/bundle/release/app-release.aab
