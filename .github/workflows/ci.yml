@@ -33,11 +33,9 @@ jobs:
       - name: Create Github Release
         uses: ncipollo/release-action@v1
         with:
+          name: ${{ steps.prep.outputs.rname }}
+          draft: true
+          prerelease: true
+          bodyFile: ${{ steps.prep.outputs.body }}
           artifacts: "build/app/outputs/bundle/release/*.aab"
-          token: ${{ secrets.PERSONAL_RELEASE_TOKEN }}
-
-      - name: Save APPBUNDLE to Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: APPBUNDLE
-          path: build/app/outputs/bundle/release/app-release.aab
+          token: ${{ secrets.GITHUB_TOKEN }} 
