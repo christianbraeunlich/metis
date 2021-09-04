@@ -26,9 +26,6 @@ jobs:
       
       - name: Run Flutter Test
         run: flutter test
-      
-      - name: Build APK
-        run: flutter build apk --split-per-abi --release
 
       - name: Build APPBUNDLE
         run: flutter build appbundle --release
@@ -36,5 +33,11 @@ jobs:
       - name: Create Github Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "build/app/outputs/apk/release/*.apk,build/app/outputs/bundle/release/*.aab"
-          token: ${{ secrets.RELEASES_TOKEN }}
+          artifacts: "build/app/outputs/bundle/release/*.aab"
+          token: ${{ secrets.PERSONAL_RELEASE_TOKEN }}
+
+      - name: Save APPBUNDLE to Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: APPBUNDLE
+          path: build/app/outputs/bundle/release/app-release.aab
