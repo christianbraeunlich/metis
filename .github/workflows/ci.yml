@@ -30,15 +30,5 @@ jobs:
       - name: Run Flutter Test Coverage
         run: flutter test --coverage
 
-      - name: Convert lcov.info to html
-        run: |
-          sudo apt-get update -qq -y
-          sudo apt-get install lcov -y
-          genhtml coverage/lcov.info -o coverage/html
-
-      - name: Upload coverage to codecov
-        run: curl -s https://codecov.io/bash
-        shell: bash
-
       - name: Build APPBUNDLE
         run: flutter build appbundle --release
