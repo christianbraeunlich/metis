@@ -1,0 +1,2 @@
+- Have you followed the [contributor guidelines](https://github.com/christianbraeunlich/metis/blob/master/CONTRIBUTING.md)?
+- If submitting code, is your pull request against develop? Unless there is a good reason otherwise, we prefer pull requests against develop and will backport as needed.
