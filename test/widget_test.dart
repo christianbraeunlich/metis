@@ -6,12 +6,15 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:metis/main.dart';
 import 'package:metis/app.dart';
 
 void main() {
   testWidgets('Fake Test', (WidgetTester tester) async {
     expect(true, true);
     expect(false, false);
+  });
+
+  testWidgets('App Fake Test', (WidgetTester tester) async {
+    await tester.pumpWidget(App());
   });
 }
