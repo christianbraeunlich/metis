@@ -32,8 +32,8 @@ jobs:
 
       - name: Convert lcov.info to html
         run: |
-          apt-get update -qq -y
-          apt-get install lcov -y
+          sudo apt-get update -qq -y
+          sudo apt-get install lcov -y
           genhtml coverage/lcov.info -o coverage/html
 
       - name: Upload coverage to codecov
