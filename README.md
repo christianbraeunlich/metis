@@ -1,19 +1,28 @@
+<img src="media/outline_book_black_24dp.png" align="right" />
+
 # metis
 
-A new Flutter project.
+<p align="center">
+    <a href="https://circleci.com/gh/badges/shields/tree/master">
+        <img src="https://img.shields.io/circleci/project/github/badges/shields/master"
+            alt="build status"></a>
+    <a href="https://github.com/ChristianBraeunlich/metis/releases/latest">
+        <img src="https://img.shields.io/github/v/release/ChristianBraeunlich/metis"
+            alt="latest release"></a>
+    <a href="https://github.com/ChristianBraeunlich/metis/graphs/contributors">
+        <img src="https://img.shields.io/github/contributors/ChristianBraeunlich/metis"
+            alt="contributors"></a>
+    <a href="https://discord.gg/dNDAYcKf3W">
+        <img src="https://img.shields.io/discord/824757590864691220?logo=discord"
+            alt="chat on Discord"></a>
+    <a href="https://twitter.com/intent/follow?screen_name=ChrisBraeunlich">
+        <img src="https://img.shields.io/twitter/follow/ChrisBraeunlich?style=social&logo=twitter"
+            alt="follow on Twitter"></a>
+</p>
+
+> Makes memorization a breeze.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 ## Dependencies
 
