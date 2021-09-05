@@ -3,8 +3,8 @@
 # metis
 
 <p align="center">
-    <a href="https://circleci.com/gh/badges/shields/tree/master">
-        <img src="https://img.shields.io/circleci/project/github/badges/shields/master"
+    <a href="https://github.com/ChristianBraeunlich/metis/actions">
+        <img src="https://img.shields.io/github/workflow/status/christianbraeunlich/metis/CI"
             alt="build status"></a>
     <a href="https://github.com/ChristianBraeunlich/metis/releases/latest">
         <img src="https://img.shields.io/github/v/release/ChristianBraeunlich/metis"
