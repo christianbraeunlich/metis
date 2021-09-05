@@ -50,3 +50,6 @@ jobs:
         with:
           name: APPBUNDLE
           path: build/app/outputs/bundle/release/app-release.aab
+
+      - name: Deploy Flutter to GitHub Pages
+        uses: erickzanardo/flutter-gh-pages@v3
